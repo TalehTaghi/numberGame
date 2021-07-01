@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html> -->
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Rəqəm oyunu</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div id="all">
+        <h1>Rəqəm oyunu</h1>
+        <h3 class="disappear">Xoş gəlmişsiniz!</h3>
+        <p class="disappear">Oyun səviyyəsini seçin</p>
+
+        <div class="buttons disappear">
+            <button value="easy" class="first" onclick="startGame(this)">Sadə</button>
+            <button value="difficult" class="second" onclick="startGame(this)">Çətin</button>
+        </div>
+
+        <div id="game">
+            <p id="condition"></p>
+
+            <div id="entry">
+                <input type="number" min="1" value="1" name="number" id="number" />
+                <button onclick="playGame()" id="confirm">Təsdiqlə</button>
+            </div>
+
+            <i id="currentResult"></i>
+        </div>
+
+        <div id="end">
+            <p>Bir daha oynamaq istəyirsinizmi?</p>
+            <div class="buttons">
+                <button class="first" value="yes" onclick="endGame(this)">Bəli</button>
+                <button class="no" value="no" onclick="endGame(this)">Xeyr</button>
+            </div>
+        </div>
+
+        <h2 id="farewell">Oynadığınıza görə təşəkkürlər! Sağ olun!</h2>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

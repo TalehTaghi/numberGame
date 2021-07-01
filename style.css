@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+#all {
+    background-color: #ffffb3;
+    border: solid 2px #ffcc00;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+#all h1 {
+    text-align: center;
+    color: darkred;
+    margin-bottom: 50px;
+}
+
+#all h3 {
+    text-align: center;
+    color: green;
+    margin-bottom: 5px;
+    font: 700 24px "Arial", 'sans-serif';
+}
+
+#all p {
+    text-align: center;
+    font: 700 20px "Arial", 'sans-serif';
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    cursor: pointer;
+    padding: 15px 32px;
+    color: white;
+    font: 700 16px "Arial", 'sans-serif';
+}
+
+.buttons .first {
+    background-color: green;
+    border: solid 2px #003300;
+}
+
+.buttons .second {
+    background-color: darkblue;
+    border: solid 2px #00004d;
+}
+
+.buttons .no {
+    background-color: darkred;
+    border: solid 2px #4d0000;
+}
+
+#game {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+#game p {
+    font: 700 18px "Arial", 'sans-serif';
+    color: darkblue;
+    margin-bottom: 5px;
+}
+
+#game i {
+    font: italic 700 16px "Arial", 'sans-serif';
+    color: #b34700;
+    text-align: center;
+}
+
+#entry {
+    display: inline-flex;
+    align-self: center;
+    border: solid 1px black;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+#entry input {
+    border: none;
+    padding: 10px;
+    font: bold 14px "Arial", 'sans-serif';
+    outline: none;
+}
+
+#entry button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-left: solid 1px black;
+    color: white;
+    background-color: #5c5c3d;
+    font: bold 14px "Arial", 'sans-serif';
+}
+
+#entry button:hover {
+    background-color: #d6d6c2;
+    color: black;
+}
+
+#end {
+    display: none;
+}
+
+#end p {
+    color: darkblue;
+    margin-bottom: 15px;
+}
+
+#farewell {
+    display: none;
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 5px;
+    font: 700 24px "Arial", 'sans-serif';
+}
